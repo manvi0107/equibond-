@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Function to send a message to the chatbot backend
   async function sendMessage(message) {
     try {
-      const response = await fetch('chatbot backend.js', { // Replace with your actual backend endpoint
+      const response = await fetch('https://equibond-chatbot-backend.vercel.app/', { 
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
