@@ -12,6 +12,7 @@
 
     <!-- Link to CSS -->
     <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="chatbot.css">
 </head>
 
 <body class="dark-theme">
@@ -138,9 +139,20 @@
         </div>
     </section>
 
-    <!-- Chatbot -->
-    <div class="chatbot" id="chatbot">
-        <i class="fas fa-comments"></i>
+    <!-- Chatbot Code -->
+    <button id="chatbot-toggle" class="chatbot-button">Chat with Us</button>
+    <div id="chatbot-overlay" class="overlay">
+        <div class="chatbot-content">
+            <div class="chatbot-header">
+                Chatbot Assistant
+                <span class="chatbot-close-btn" onclick="toggleChatbot()">X</span>
+            </div>
+            <div id="chatbot-messages" class="chatbot-messages"></div>
+            <div class="chatbot-input-area">
+                <input type="text" id="chatbot-input" placeholder="Type your message..." />
+                <button id="chatbot-send-btn">Send</button>
+            </div>
+        </div>
     </div>
 
     <!-- JavaScript -->
