@@ -6,6 +6,7 @@
     <title>EquiBond</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="chatbot.css">
+    
 </head>
 <body bgcolor="#100d28">
     <div class="hero_section">
@@ -138,5 +139,24 @@
     <div id="gradient3"></div>
     <div id="gradient4"></div>
     <div id="gradient5"></div>
+
+     <!-- Chatbot Code -->
+    <button id="chatbot-toggle" class="chatbot-button">Chat with Us</button>
+    <div id="chatbot-overlay" class="overlay">
+        <div class="chatbot-content">
+            <div class="chatbot-header">
+                Chatbot Assistant
+                <span class="chatbot-close-btn" onclick="toggleChatbot()">X</span>
+            </div>
+            <div id="chatbot-messages" class="chatbot-messages"></div>
+            <div class="chatbot-input-area">
+                <input type="text" id="chatbot-input" placeholder="Type your message..." />
+                <button id="chatbot-send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="chatbot.js"></script>
 </body>
 </html>
