@@ -1,0 +1,163 @@
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Dark Theme Colors */
+body.dark-theme {
+  background-color: #1d1f27;
+  color: #d3d4d9;
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Header */
+header {
+  background: #11131a;
+  padding: 150px 0;
+  text-align: center;
+  background-image: url(a1.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: #343848;
+  transition: background 0.3s;
+}
+
+header nav ul li a:hover {
+  background: #4b7bec;
+}
+
+/* About Us Section */
+.about-us, .why-us, .values {
+  padding: 50px 0;
+}
+
+.about-us h2, .why-us h2, .values h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.about-us p, .values p {
+  color: #d3d4d9;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Why Us Section */
+.why-us {
+  background: #6832be;
+}
+
+.why-us-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.why-us-box {
+  background: #2e3042;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 23%;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.why-us-box:hover {
+  transform: translateY(-10px);
+  background: #4b7bec;
+}
+
+.why-us-box i {
+  font-size: 2.5rem;
+  color: #4b7bec;
+  margin-bottom: 15px;
+}
+
+.why-us-box h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.why-us-box p {
+  color: #d3d4d9;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Core Values Section */
+.values {
+  background: #1d1f27;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #11131a;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Chatbot */
+.chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #4b7bec;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.chatbot i {
+  color: white;
+  font-size: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .why-us-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-us-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="index.css">
+</head>
+<body bgcolor="#100d28">
+    <div class="hero_section">
+        <div class="navbar">
+            <img class="logo" src="logofinal.png">
+            <div class="menu_items">
+                <ul type="none" class="menu_list">
+                    <li><a href="about.html" class="menu_option">ABOUT</a></li>
+                    <li><a href="project.html" class="menu_option">PROJECTS</a></li>
+                    <li><a href="sibs.html" class="menu_option">SIBs</a></li>
+                    <LI><a href="signup.html" class="menu_option">SIGN UP</a></LI>
+                </ul>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="content wrapper">
+                <h1 style="font-size: 64px;">Discover Various Projects</h1>
+                <p style="font-size: 18px;">The most secure marketplace for investing in various projects.</p>
+                <button class="rounded" onclick="window.location.href='project.html'">VIEW PROJECTS</button>
+                <button class="rounded" id="ghost" onclick="window.location.href='chatbot.html'">CHAT WITH US</button>
+            </div>
+            <div class="image_wrapper">
+                <img src="section1.png" class="section_image">
+            </div>
+        </div>
+    </div>
+    <div class="featured_section">
+        <p class="subheader">FEATURED ON</p>
+        <div class="logo_wrapper">
+            <ul type="none" class="feat">
+                <li class="feat_item">FORBES</li>
+                <li class="feat_item">FastCompany</li>
+                <li class="feat_item">MIT</li>
+                <li class="feat_item">FORBES</li>
+            </ul>
+        </div>
+    </div>
+    <div class="benefits">
+        <div class="grid">
+            <div class="image_wrapper">
+                <img src="sibs.png" class="section_image" style="padding-left: 0;">
+            </div>
+            <div class="content wrapper">
+                <P style="font-size: 18px;">IMPACTFUL</P>
+                <hr style="width: 100px;align-self: left;">
+                <h1 style="font-size: 64px;">Create Social Impact Bonds</h1>
+                <p style="font-size: 18px;">Publish impactful projects and form social impact bonds to gain rewards.</p>
+                <button class="rounded" onclick="window.location.href='sibs.html'">VIEW SIBs DETAILS</button>
+            </div>
+        </div>
+    </div>
+    <div class="testimonials">
+        <p class="subheader" style="text-align: center;">TESTIMONIALS</p>
+        <h2 style="text-align: center;font-size: 64px;">Read What Others <br> Have To Say</h2>
+        <div class="container_new">
+            <div class="testimonial_ind">
+                <div class="testimage">
+                    <img class="pfp" src="pfp.jpg">
+                </div>
+                <div class="mask"></div>
+                <div class="review-text">
+                    <h4>MANVI FALWARIA</h4>
+                    <h6>I was truly impressed by the comprehensive resources and information provided by this renewable energy website. Their commitment to promoting clean energy is evident, and I feel more empowered to make eco-friendly choices for my home.</h6>
+                </div>
+            </div>
+            <div class="testimonial_ind">
+                <div class="testimage">
+                    <img class="pfp" src="pfp2.jpg">
+                </div>
+                <div class="mask"></div>
+                <div class="review-text">
+                    <h4>KRITIKA SINGH</h4>
+                    <h6>I was truly impressed by the comprehensive resources and information provided by this renewable energy website. Their commitment to promoting clean energy is evident, and I feel more empowered to make eco-friendly choices for my home.</h6>
+                </div>
+            </div>
+            <div class="testimonial_ind">
+                <div class="testimage">
+                    <img class="pfp" src="lakshita.jpeg">
+                </div>
+                <div class="mask"></div>
+                <div class="review-text">
+                    <h4>LAKSHITA AGGARWAL</h4>
+                    <h6>I was truly impressed by the comprehensive resources and information provided by this renewable energy website. Their commitment to promoting clean energy is evident, and I feel more empowered to make eco-friendly choices for my home.</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="get_started" style="align-items: center;">
+            <p class="subheader" style="text-align: center;">ARE YOU READY ?</p>
+            <h2 style="text-align: center;font-size: 64px;">Be A Part Of The <br> Next Big Thing</h2>
+            <button class="rounded" id="get" onclick="window.location.href='signup.html'">GET STARTED</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer" style="margin-bottom: 100px;">
+            <div class="footer_cols">
+                <div class="col"><img class="logo" src="logofinal.png"></div>
+                <div class="col">
+                    <ul type="none" class="footer_list">
+                        <li>Services</li>
+                        <li><a href="faq.html" style="text-decoration: none;">FAQs</a></li>
+                        <li>Support</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul type="none" class="footer_list">
+                        <li><a href="about.html" style="text-decoration: none;">About Us</a></li>
+                        <li>Contact Us
+                            <div class="form-message">
+                                <form id="contactForm" action="submit_form.php" method="POST">
+                                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                    
+                                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                                    
+                                    <input type="submit" value="Send Message" id="submit">
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr style="color: white;width: 80%;margin-left: 10%;">
+            <div class="socials">
+                <img src="socials.webp" style="align-self: center;height: 50px;width: auto;margin-left: 40%;margin-top: 30px;">
+            </div>
+        </div>
+    </div>
+    <div id="gradient1"></div>
+    <div id="gradient2"></div>
+    <div id="gradient3"></div>
+    <div id="gradient4"></div>
+    <div id="gradient5"></div>
+</body>
+</html>

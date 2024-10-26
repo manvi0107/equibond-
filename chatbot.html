@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On-Demand Agent</title>
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+    <div class="chatbot-container" id="chatbot">
+        <div class="chatbot-header">
+            <h3>Support Agent</h3>
+            <button onclick="toggleChatbot()">X</button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages"></div>
+        <div class="chatbot-input">
+            <input type="text" id="user-input" placeholder="Type your message..." onkeydown="if(event.key === 'Enter') sendMessage()">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <button class="open-chatbot-button" onclick="toggleChatbot()">Need Help?</button>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
+

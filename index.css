@@ -1,0 +1,301 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+.hero_section{
+    width: 100%;
+    height: auto;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 20px;
+}
+.navbar{
+    display: flex;
+    gap: 100px;
+}
+.logo{
+    width: 300px;
+    height: auto;
+}
+.menu_items{
+    display: flex;
+}
+.menu_option{
+    text-decoration: none;
+    font-size: 18px;
+}
+.menu_list{
+    display: flex;
+    gap: 100px;
+    margin-right: 100px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 100px;
+    padding: 50px;
+}
+p{
+    padding-top: 0;
+    margin-top: 0%;
+}
+.rounded{
+    padding-left: 54px;
+    padding-right: 54px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    margin-right: 21px;
+    margin-top: 9px;
+    border-radius: 100px;
+    background-color: #7c7dd6;
+    border-style: none;
+    transition: all 0.3s ease;
+}
+.rounded:hover{
+    background-color: #acd9da;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(3, 145, 145, 0.499);
+}
+#ghost{
+    background-color: transparent;
+    border-style: solid;
+    border-color: #acd9da;
+    transition: all 0.3s ease;
+}
+#ghost:hover{
+    background-color: #acd9da;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(3, 145, 145, 0.499);
+}
+.featured_section{
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+.subheader{
+    font-size: 18px;
+    margin-left: 50px;
+}
+.feat{
+    display: flex;
+    background-color: rgba(99, 88, 189, 0.17);
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 50px;
+}
+.feat_item{
+    color: rgba(240, 255, 255, 0.788);
+    font-size: 28px;
+    transition: all 0.3s ease;
+}
+.feat_item:hover{
+    color: white;
+}
+.benefits{
+    width: 100%;
+    height: auto;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 20px;
+}
+.image_wrapper{
+    padding-left: 100px;
+}
+.subheader{
+    position: relative;
+}
+hr{
+    position: absolute;
+    margin-top: 0px;
+}
+.testimonials{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 200px;
+}
+.container_new{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 16px;
+    align-self: center;
+}
+.testimonial_ind{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 35px 35px 35px 35px;
+}
+.testimage{
+    width: 100px; /* Set the width of the mask */
+    height: 100px; /* Set the height to the same as width for a circle */
+    overflow: hidden; /* Hide overflow */
+    border-radius: 50%; /* Make it a circle */
+    align-self: center;
+    margin-left: 40%;
+}
+.testimage img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the circle */
+    align-self: center;
+}
+.review-text{
+    text-align: center;
+}
+.container{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 5%;
+}
+.get_started{
+    padding-top: 60px;
+    padding-bottom: 70px;
+    padding-left: 282px;
+    padding-right: 283px;
+    background: linear-gradient(309deg , #87d4d6,#7375db);
+    border-radius: 30px;
+    letter-spacing: 1.5px;
+}
+#get{
+    background-color: #00003b;
+    transition: all 0.3 ease;
+    margin-left: 40%;
+}
+#get:hover{
+    color: #acd9da;
+    transform: scale(1.1);
+}
+.footer_cols{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+.footer_list{
+    margin-top: 10px;
+    line-height: 2.6;
+}
+#gradient1{
+    width: 679px;
+    height: 679px;
+    border-radius: 100%;
+    background-color: #8080d7;
+    filter: blur(100px);
+    opacity: 0.5;
+    position: absolute;
+    top: -38%;
+    left: 8%;
+    z-index: -1;
+}
+#gradient3{
+    width: 679px;
+    height: 679px;
+    border-radius: 100%;
+    background-color: #8080d7;
+    filter: blur(100px);
+    opacity: 0.5;
+    position: absolute;
+    top: 104%;
+    left: -25%;
+    z-index: -1;
+}
+#gradient2{
+    width: 679px;
+    height: 679px;
+    border-radius: 100%;
+    background-color: rgba(172, 217, 218, 0.8);
+    filter: blur(100px);
+    opacity: 0.5;
+    position: absolute;
+    top: 30%;
+    left: 67%;
+    z-index: -1;
+}
+#gradient4{
+    width: 679px;
+    height: 679px;
+    border-radius: 100%;
+    background-color: rgba(172, 217, 218, 0.8);
+    filter: blur(100px);
+    opacity: 0.5;
+    position: absolute;
+    top: 149%;
+    left: 67%;
+    z-index: -1;
+}
+#gradient5{
+    width: 679px;
+    height: 679px;
+    border-radius: 100%;
+    background-color: #8080d7;
+    filter: blur(100px);
+    opacity: 0.5;
+    position: absolute;
+    top: 248%;
+    left: -25%;
+    z-index: -1;
+}
+#email{
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 40px;
+    background-color: #8080d798;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    border-style: none;
+    margin-top: 15px;
+    
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari */
+    color: #ffffff; /* Change to your desired color */
+    opacity: 1; /* Optional: make it fully opaque */
+}
+#message{
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 40px;
+    background-color: #8080d798;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    border-style: none;
+    margin-top: 15px;
+}
+#submit{
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 40px;
+    background-color: #17175b98;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    border-style: none;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+}
+#submit:hover{
+    background-color: #acd9da;
+    color: black;
+}
+.profile-launch{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+}
+.round{
+    background-color: #00003b;
+    border-radius: 30px;
+    padding: 20px;
+    border-style:  none;
+    transition: all 0.3s ease;
+}
+.round:hover{
+    background-color: #acd9da;
+    color: black;
+    transform: scale(1.1);
+}

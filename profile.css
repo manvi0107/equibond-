@@ -1,0 +1,185 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+.navbar{
+    display: flex;
+    gap: 450px;
+}
+.logo{
+    width: 300px;
+    height: auto;
+}
+.menu_items{
+    display: flex;
+}
+.menu_option{
+    text-decoration: none;
+    font-size: 18px;
+}
+.menu_list{
+    display: flex;
+    gap: 100px;
+    margin-right: 100px;
+}
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+    grid-template-rows: repeat(3, 200px); /* Create 2 rows of 200px height */
+    gap: 10px; /* Space between grid items */
+    z-index: -1;
+}
+
+.item {
+    background-color:  rgba(255, 255, 255, 0.109); /* Green background */
+    backdrop-filter: blur(10px) opacity(0.5);
+    color: white; /* White text */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    border-radius: 8px; /* Rounded corners */
+    z-index: -1;
+}
+
+.item1 {
+    grid-column: span 1; /* Span 2 columns */
+    grid-row: span 3; /* Span 1 row */
+    position: relative;
+}
+
+.item2 {
+    grid-column: span 1; /* Span 1 column */
+    grid-row: span 3; /* Span 2 rows */
+    padding: 20px;
+}
+
+.item3 {
+    grid-column: span 1; /* Span 1 column */
+    grid-row: span 1; /* Span 1 row */
+    padding: 20px;
+}
+
+.item4 {
+    grid-column: span 1; /* Span 1 column */
+    grid-row: span 1; /* Span 1 row */
+    padding: 20px;
+}
+
+
+
+.item6 {
+    grid-column: span 1; /* Span 1 column */
+    grid-row: span 1; /* Span 1 row */
+    padding: 20px;
+}
+
+.bento_contain{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    z-index: -1;
+}
+.testimage{
+    width: 200px; /* Set the width of the mask */
+    height: 200px; /* Set the height to the same as width for a circle */
+    overflow: hidden; /* Hide overflow */
+    border-radius: 50%; /* Make it a circle */
+    align-self: center;
+    margin-top: 40px;
+    margin-left: 30%;
+    z-index: 2;
+}
+.testimage img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the circle */
+    align-self: center;
+    z-index: 2;
+}
+.text{
+    margin-top: 70px;
+    line-height: 10px;
+    width: 100%;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+.header{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: -10%;
+    font-weight: 50;
+    font-size: 28px;
+    font-family: 'Calibri';
+}
+.subheader{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: -30px;
+}
+.card{
+    margin-inline: 5%;
+    border-radius: 20px;
+    background-color: rgba(240, 248, 255, 0.178);
+    padding: 25px;
+}
+.text_card{
+    color: black;
+    margin-top: -30px;
+}
+.details{
+    color: black;
+    margin-left: -40px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 50px);
+    gap: 10px;
+}
+.grid-item{
+    background-color: #00003b;
+    border-radius: 10px;
+    text-align: center;
+}
+.grid_contain{
+    margin-inline: 5%;
+}
+.project{
+    display: flex;
+}
+img{
+    height: 100px;
+    width: auto;
+    margin-right: 10px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+.invest{
+    display: flex;
+}
+#gradient1{
+    width: 679px;
+    height: 679px;
+    border-radius: 100%;
+    background-color: #8080d7;
+    filter: blur(100px);
+    opacity: 0.5;
+    position: absolute;
+    top: -38%;
+    left: 8%;
+    z-index: -3;
+}
+
+#gradient2{
+    width: 679px;
+    height: 679px;
+    border-radius: 100%;
+    background-color: rgba(246, 62, 212, 0.7);
+    filter: blur(100px);
+    opacity: 0.4;
+    position: absolute;
+    top: 30%;
+    left: 67%;
+    z-index: -3;
+}

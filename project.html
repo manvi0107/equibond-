@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Projects - Filter by Domain</title>
+
+    <!-- Google Fonts and Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="projects.css">
+</head>
+
+<body class="dark-theme">
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Our Projects</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Filter Section -->
+    <section class="filter">
+        <div class="container">
+            <h2>Filter by Domain</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="fintech">FinTech</button>
+                <button class="filter-btn" data-filter="edtech">EdTech</button>
+                <button class="filter-btn" data-filter="healthtech">HealthTech</button>
+                <button class="filter-btn" data-filter="envtech">EnvTech</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <p>Explore the impactful projects that are transforming the world.</p>
+            <div class="projects-grid">
+                <!-- Project Card 1 (FinTech) -->
+                <div class="project-card fintech">
+                    <div class="project-info">
+                        <h3>Blockchain Payment System</h3>
+                        <p>A decentralized payment system for the unbanked population.</p>
+                        <div class="project-hover">
+                            <a href="#" class="btn">View Details</a>
+                        </div>
+                        <div class="project-hover">
+                            <a href="#" class="btn">Invest Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 (EdTech) -->
+                <div class="project-card edtech">
+                    <div class="project-info">
+                        <h3>Virtual Classroom Platform</h3>
+                        <p>Bringing quality education to remote areas using virtual classrooms.</p>
+                        <div class="project-hover">
+                            <a href="#" class="btn">View Details</a>
+                        </div>
+                        <div class="project-hover">
+                            <a href="#" class="btn">Invest Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 (HealthTech) -->
+                <div class="project-card healthtech">
+                    <div class="project-info">
+                        <h3>AI-Powered Telemedicine</h3>
+                        <p>Providing affordable healthcare through AI and telemedicine services.</p>
+                        <div class="project-hover">
+                            <a href="#" class="btn">View Details</a>
+                        </div>
+                        <div class="project-hover">
+                            <a href="#" class="btn">Invest Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 (EnvTech) -->
+                <div class="project-card envtech">
+                    <div class="project-info">
+                        <h3>Clean Energy Solution</h3>
+                        <p>Innovative solar energy solutions for rural areas.</p>
+                        <div class="project-hover">
+                            <a href="#" class="btn">View Details</a>
+                        </div>
+                        <div class="project-hover">
+                            <a href="#" class="btn">Invest Now</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 (FinTech) -->
+                <div class="project-card fintech">
+                    <div class="project-info">
+                        <h3>Microfinance App</h3>
+                        <p>A digital solution for microloans and financial inclusion.</p>
+                        <div class="project-hover">
+                            <a href="#" class="btn">View Details</a>
+                        </div>
+                        <div class="project-hover">
+                            <a href="#" class="btn">Invest Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 (EdTech) -->
+                <div class="project-card edtech">
+                    <div class="project-info">
+                        <h3>Interactive Learning Games</h3>
+                        <p>Enhancing education through engaging and interactive learning games.</p>
+                        <div class="project-hover">
+                            <a href="#" class="btn">View Details</a>
+                        </div>
+                        <div class="project-hover">
+                            <a href="#" class="btn">Invest Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot -->
+    <div class="chatbot" id="chatbot">
+        <i class="fas fa-comments"></i>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="project.js"></script>
+</body>
+</html>
+
+

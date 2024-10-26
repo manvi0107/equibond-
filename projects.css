@@ -1,0 +1,180 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background-color: #1e1e2f;
+  color: #d3d4d9;
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Header */
+header {
+  background: #141419;
+  padding: 150px 0;
+  text-align: center;
+  background-image: url(p2.jpeg);
+  background-repeat: no-repeat;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: #251e5c;
+  transition: background 0.3s;
+}
+
+header nav ul li a:hover {
+  background: #4b7bec;
+}
+
+/* Filter Buttons */
+.filter {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.filter-buttons {
+  display: inline-block;
+}
+
+.filter-btn {
+  background-color: #4b7bec;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 5px;
+}
+
+.filter-btn:hover {
+  background-color: #375dbe;
+}
+
+/* Projects Section */
+.projects {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.projects p {
+  color: #d3d4d9;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+/* Project Cards */
+.projects-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: #2a2d3b;
+  width: 30%;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: none; /* Initially hidden, will be shown by JS filter */
+}
+
+.project-card.active {
+  display: block; /* Shown when active by JS */
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.project-hover {
+  margin-bottom: 30px;
+}
+.btn {
+  background-color: #4b7bec;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.project-info h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  color: #d3d4d9;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background: #141419;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Chatbot */
+.chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #4b7bec;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.chatbot i {
+  color: white;
+  font-size: 2rem;
+}
+
+  
