@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>SIB on Ethereum Blockchain</title>
-
+    
     <!-- Google Fonts and Font Awesome -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- Link to CSS -->
     <link rel="stylesheet" href="sib.css">
+    <link rel="stylesheet" href="chatbot.css">
+    
 </head>
 <body class="dark-theme">
     <!-- Header Section -->
@@ -106,12 +108,24 @@
         </div>
     </section>
 
-    <!-- Chatbot -->
-    <div class="chatbot" id="chatbot">
-        <i class="fas fa-comments"></i>
+    <!-- Chatbot Code -->
+    <button id="chatbot-toggle" class="chatbot-button">Chat with Us</button>
+    <div id="chatbot-overlay" class="overlay">
+        <div class="chatbot-content">
+            <div class="chatbot-header">
+                Chatbot Assistant
+                <span class="chatbot-close-btn" onclick="toggleChatbot()">X</span>
+            </div>
+            <div id="chatbot-messages" class="chatbot-messages"></div>
+            <div class="chatbot-input-area">
+                <input type="text" id="chatbot-input" placeholder="Type your message..." />
+                <button id="chatbot-send-btn">Send</button>
+            </div>
+        </div>
     </div>
 
     <!-- JavaScript -->
     <script src="sib.js"></script>
+    <script src="chatbot.js"></script>
 </body>
 </html>
