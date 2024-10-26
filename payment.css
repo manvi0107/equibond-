@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font choice */
 }
 
 body {
@@ -10,55 +10,77 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f0f0f0;
+  background-color: #100d28; /* Dark background color for elegant appearance */
 }
 
 .container {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #00003b; /* Deep navy background for container */
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Elevated shadow for depth */
+  width: 380px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.container:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
 }
 
 h1 {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-align: center;
+  color: #acd9da; /* Accent color for headers */
+  font-size: 24px;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px; /* More breathing space between form elements */
 }
 
 label {
-  font-weight: bold;
+  font-weight: 600;
+  color: #acd9da;
+  margin-bottom: 5px; /* Gap between label and input */
 }
 
 input[type="text"],
 input[type="email"],
 input[type="number"] {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 12px;
+  border: 1px solid #7375db; /* Border to match the theme */
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #acd9da; /* Softer border on focus */
+  background-color: #fff; /* Brighter background on focus */
 }
 
 button {
-  padding: 10px;
-  background-color: #4caf50;
-  color: white;
+  padding: 12px;
+  background-color: #7375db; /* Button primary color */
+  color: #fff; /* White text for better contrast */
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #4b58d1; /* Slightly darker shade on hover */
+  transform: scale(1.03); /* Subtle scaling effect */
 }
 
 #status {
-  margin-top: 20px;
+  margin-top: 25px;
   text-align: center;
   font-weight: bold;
+  color: #acd9da;
+  font-size: 16px;
 }
