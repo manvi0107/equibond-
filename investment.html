@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="invest.css">
+    <link rel="stylesheet" href="det.css">
+</head>
+<body bgcolor="#100d28">
+    <div class="navbar">
+        <img class="logo" src="logofinal.png">
+        <div class="menu_items">
+            <ul type="none" class="menu_list">
+                <li><a href="about.html" class="menu_option">ABOUT</a></li>
+                <li><a href="project.html" class="menu_option">PROJECTS</a></li>
+                <li><a href="sibs.html" class="menu_option">SIBs</a></li>
+                
+                <li><a href="index.html" class="menu_option"><button onclick="window.location.href='index';" style="padding-inline: 15px;padding-top: 10px;padding-bottom: 10px;border-radius: 20px;background-color: #7c7dd6;border-style: none;">SIGN OUT</button></a></li>
+                <LI><a href="profile.html" class="menu_option"><img src="pfp2.jpg" class="profile-launch"></a></LI>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="project-details" >
+            
+            <div class="image-wrapper">
+                <IMG src="market-trends-analysis.jpg" class="image">
+            </div>
+            <div class="text-det">
+                <h2 style="font-size: 64px;">25% Avg. Growth</h2>
+                <p style="font-size: 18px;">Powerpool has seen an average of 25% success in the last few years while providing customer satisfaction.</p>
+                <button class="rounded">INVEST</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="project-details">
+            
+            <div class="agreement">
+                <p class="subheader">AGREEMENT</p>
+                <form>
+                    <textarea name="agreement" id="nego" placeholder="Draft your agreement"></textarea>
+                </form>
+            </div>
+            <div class="chat">
+                <p class="subheader">CHAT WITH DEVELOPER</p>
+                <div class="chat-container">
+                    <div class="message sender">
+                        <img src="pfp2.jpg" alt="User  1" class="avatar">
+                        <div class="message-content">
+                            <p>Hello! How are you today?</p>
+                            <span class="time">11:00 AM</span>
+                        </div>
+                    </div>
+                    <div class="message receiver">
+                        <img src="pfp.jpg" alt="User  2" class="avatar">
+                        <div class="message-content">
+                            <p style="color: black;;">I'm good, thanks! What about you?</p>
+                            <span class="time">11:01 AM</span>
+                        </div>
+                    </div>
+                    <div class="input-area">
+                        <input type="text" class="message-input" placeholder="Type your message...">
+                        <button class="send-button">Send</button>
+                    </div>
+                </div>
+            
+                <div class="schedule">
+                    <button class="rounded" style="padding-inline: 225px;">SCHEDULE A MEET</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-inline: 10%;display: flex;gap: 150px;">
+        <div class="payment-section">
+            <h3>Payment Options</h3>
+            <form>
+                <label>
+                    <input type="radio" name="payment" value="credit-card" checked>
+                Credit Card
+                </label><br>
+                <label>
+                    <input type="radio" name="payment" value="paypal">
+                PayPal
+                </label><br>
+                <label>
+                <input type="radio" name="payment" value="bank-transfer">
+                Bank Transfer
+                </label><br>
+            <button type="submit" class="rounded">Pay Now</button>
+          </form>
+        </div>
+        <div class="img">
+            <img src="pay.png"  style="height: 200px;width: auto;">
+        </div>
+    </div>
+    <div id="gradient1"></div>
+    <div id="gradient2"></div>
+    <div id="gradient3"></div>
+</body>
+</html>
