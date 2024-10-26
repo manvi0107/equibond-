@@ -2,26 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>On-Demand Agent</title>
+    <title>Chatbot Assistance</title>
     <link rel="stylesheet" href="chatbot.css">
+    
 </head>
 <body>
-    <div class="chatbot-container" id="chatbot">
-        <div class="chatbot-header">
-            <h3>Support Agent</h3>
-            <button onclick="toggleChatbot()">X</button>
-        </div>
-        <div class="chatbot-messages" id="chatbot-messages"></div>
-        <div class="chatbot-input">
-            <input type="text" id="user-input" placeholder="Type your message..." onkeydown="if(event.key === 'Enter') sendMessage()">
-            <button onclick="sendMessage()">Send</button>
+    <button id="chatbot-toggle" class="chatbot-button">Chat with Us</button>
+    <div id="chatbot-overlay" class="overlay">
+        <div class="chatbot-content">
+            <div class="chatbot-header">
+                Chatbot Assistant
+                <span class="chatbot-close-btn" onclick="toggleChatbot()">X</span>
+            </div>
+            <div id="chatbot-messages" class="chatbot-messages">
+                <!-- This is where the chat messages will be displayed -->
+            </div>
+            <div class="chatbot-input-area">
+                <input type="text" id="chatbot-input" placeholder="Type your message..." />
+                <button id="chatbot-send-btn">Send</button>
+            </div>
         </div>
     </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="frontjs.js"></script>
+    <script>
+        // Toggle the visibility of the chatbot overlay
+        $('#chatbot-toggle').click(function() {
+            $('#chatbot-overlay').toggle();
+        });
 
-    <button class="open-chatbot-button" onclick="toggleChatbot()">Need Help?</button>
+        function toggleChatbot() {
+            $('#chatbot-overlay').toggle(); // This will also hide/show the overlay
+        }
 
-    <script src="chatbot.js"></script>
+        // Close button functionality
+        $('.chatbot-close-btn').click(function() {
+            $('#chatbot-overlay').hide(); // Hide the overlay when the close button is clicked
+        });
+    </script>
 </body>
 </html>
-
