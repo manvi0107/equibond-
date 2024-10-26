@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EquiBond</title>
-    <link rel = "stylesheet" href="index.css">
-    <link rel="stylesheet" href="chatbot.css">
-</head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="chatbot.css"> <!-- Link to Chatbot CSS -->
 </head>
 <body bgcolor="#100d28">
     <div class="hero_section">
@@ -17,7 +16,7 @@
                     <li><a href="about.html" class="menu_option">ABOUT</a></li>
                     <li><a href="project.html" class="menu_option">PROJECTS</a></li>
                     <li><a href="sibs.html" class="menu_option">SIBs</a></li>
-                    <LI><a href="signup.html" class="menu_option">SIGN UP</a></LI>
+                    <li><a href="signup.html" class="menu_option">SIGN UP</a></li>
                 </ul>
             </div>
         </div>
@@ -26,13 +25,14 @@
                 <h1 style="font-size: 64px;">Discover Various Projects</h1>
                 <p style="font-size: 18px;">The most secure marketplace for investing in various projects.</p>
                 <button class="rounded" onclick="window.location.href='project.html'">VIEW PROJECTS</button>
-                <button class="rounded" id="ghost" onclick="window.location.href='chatbot.html'">CHAT WITH US</button>
+                <button class="rounded" id="ghost" onclick="toggleChatbot()">CHAT WITH US</button> <!-- Updated for chatbot -->
             </div>
             <div class="image_wrapper">
                 <img src="section1.png" class="section_image">
             </div>
         </div>
     </div>
+
     <div class="featured_section">
         <p class="subheader">FEATURED ON</p>
         <div class="logo_wrapper">
@@ -44,13 +44,14 @@
             </ul>
         </div>
     </div>
+
     <div class="benefits">
         <div class="grid">
             <div class="image_wrapper">
                 <img src="sibs.png" class="section_image" style="padding-left: 0;">
             </div>
             <div class="content wrapper">
-                <P style="font-size: 18px;">IMPACTFUL</P>
+                <p style="font-size: 18px;">IMPACTFUL</p>
                 <hr style="width: 100px;align-self: left;">
                 <h1 style="font-size: 64px;">Create Social Impact Bonds</h1>
                 <p style="font-size: 18px;">Publish impactful projects and form social impact bonds to gain rewards.</p>
@@ -58,6 +59,7 @@
             </div>
         </div>
     </div>
+
     <div class="testimonials">
         <p class="subheader" style="text-align: center;">TESTIMONIALS</p>
         <h2 style="text-align: center;font-size: 64px;">Read What Others <br> Have To Say</h2>
@@ -94,6 +96,7 @@
             </div>
         </div>
     </div>
+
     <div class="container">
         <div class="get_started" style="align-items: center;">
             <p class="subheader" style="text-align: center;">ARE YOU READY ?</p>
@@ -101,6 +104,7 @@
             <button class="rounded" id="get" onclick="window.location.href='signup.html'">GET STARTED</button>
         </div>
     </div>
+
     <div class="container">
         <div class="footer" style="margin-bottom: 100px;">
             <div class="footer_cols">
@@ -119,9 +123,7 @@
                             <div class="form-message">
                                 <form id="contactForm" action="submit_form.php" method="POST">
                                     <input type="email" id="email" name="email" placeholder="Your Email" required>
-                                    
                                     <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                                    
                                     <input type="submit" value="Send Message" id="submit">
                                 </form>
                             </div>
@@ -135,10 +137,49 @@
             </div>
         </div>
     </div>
+
     <div id="gradient1"></div>
     <div id="gradient2"></div>
     <div id="gradient3"></div>
     <div id="gradient4"></div>
     <div id="gradient5"></div>
+
+    <!-- Chatbot Code -->
+    <button id="chatbot-toggle" class="chatbot-button">Chat with Us</button>
+    <div id="chatbot-overlay" class="overlay">
+        <div class="chatbot-content">
+            <div class="chatbot-header">
+                Chatbot Assistant
+                <span class="chatbot-close-btn" onclick="toggleChatbot()">X</span>
+            </div>
+            <div id="chatbot-messages" class="chatbot-messages"></div>
+            <div class="chatbot-input-area">
+                <input type="text" id="chatbot-input" placeholder="Type your message..." />
+                <button id="chatbot-send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Link to your JavaScript files -->
+    <script src="js/script.js"></script> <!-- Your existing JS -->
+    <script src="js/frontjs.js"></script> <!-- Chatbot JS -->
+
+    <script>
+        $(document).ready(function() {
+            $('#chatbot-toggle').click(function() {
+                $('#chatbot-overlay').toggle();
+            });
+            $('.chatbot-close-btn').click(function() {
+                $('#chatbot-overlay').hide();
+            });
+        });
+
+        function toggleChatbot() {
+            $('#chatbot-overlay').toggle();
+        }
+    </script>
 </body>
 </html>
