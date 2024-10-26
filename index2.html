@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel = "stylesheet" href="index.css">
+    <title>EquiBond</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="chatbot.css">
 </head>
 <body bgcolor="#100d28">
     <div class="hero_section">
@@ -15,7 +16,7 @@
                     <li><a href="about.html" class="menu_option">ABOUT</a></li>
                     <li><a href="project.html" class="menu_option">PROJECTS</a></li>
                     <li><a href="sibs.html" class="menu_option">SIBs</a></li>
-                    <LI><button onclick="window.location.href='index.html'" class="menu_option round">SIGN OUT</button></LI>
+                    <li><button onclick="window.location.href='index.html'" class="menu_option round">SIGN OUT</button></li>
                     <li><a href="profile.html" class="menu_option"><img src="pfp2.jpg" class="profile-launch"></a></li>
                 </ul>
             </div>
@@ -24,8 +25,8 @@
             <div class="content wrapper">
                 <h1 style="font-size: 64px;">Discover Various Projects</h1>
                 <p style="font-size: 18px;">The most secure marketplace for investing in various projects.</p>
-                <button class="rounded"><a href="projectdetails.html">VIEW PROJECTS</a></button>
-                <button class="rounded" id="ghost">VIEW PROJECTS</button>
+                <button class="rounded" onclick="window.location.href='projectdetails.html'">VIEW PROJECTS</button>
+                <button class="rounded" id="ghost" onclick="window.location.href='chatbot.html'">CHAT WITH US</button>
             </div>
             <div class="image_wrapper">
                 <img src="section1.png" class="section_image">
@@ -49,17 +50,17 @@
                 <img src="sibs.png" class="section_image" style="padding-left: 0;">
             </div>
             <div class="content wrapper">
-                <P style="font-size: 18px;">IMPACTFUL</P>
-                <hr style="width: 100px;align-self: left;">
+                <p style="font-size: 18px;">IMPACTFUL</p>
+                <hr style="width: 100px; align-self: left;">
                 <h1 style="font-size: 64px;">Create Social Impact Bonds</h1>
                 <p style="font-size: 18px;">Publish impactful projects and form social impact bonds to gain rewards.</p>
-                <button class="rounded">VIEW SIBs DETAILS</button>
+                <button class="rounded" onclick="window.location.href='sibs.html'">VIEW SIBs DETAILS</button>
             </div>
         </div>
     </div>
     <div class="testimonials">
         <p class="subheader" style="text-align: center;">TESTIMONIALS</p>
-        <h2 style="text-align: center;font-size: 64px;">Read What Others <br> Have To Say</h2>
+        <h2 style="text-align: center; font-size: 64px;">Read What Others <br> Have To Say</h2>
         <div class="container_new">
             <div class="testimonial_ind">
                 <div class="testimage">
@@ -95,9 +96,9 @@
     </div>
     <div class="container">
         <div class="get_started" style="align-items: center;">
-            <p class="subheader" style="text-align: center;">ARE YOU READY ?</p>
-            <h2 style="text-align: center;font-size: 64px;">Be A Part Of The <br> Next Big Thing</h2>
-            <button class="rounded" id="get">GET STARTED</button>
+            <p class="subheader" style="text-align: center;">ARE YOU READY?</p>
+            <h2 style="text-align: center; font-size: 64px;">Be A Part Of The <br> Next Big Thing</h2>
+            <button class="rounded" id="get" onclick="window.location.href='signup.html'">GET STARTED</button>
         </div>
     </div>
     <div class="container">
@@ -118,9 +119,7 @@
                             <div class="form-message">
                                 <form id="contactForm" action="submit_form.php" method="POST">
                                     <input type="email" id="email" name="email" placeholder="Your Email" required>
-                                    
                                     <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                                    
                                     <input type="submit" value="Send Message" id="submit">
                                 </form>
                             </div>
@@ -128,9 +127,9 @@
                     </ul>
                 </div>
             </div>
-            <hr style="color: white;width: 80%;margin-left: 10%;">
+            <hr style="color: white; width: 80%; margin-left: 10%;">
             <div class="socials">
-                <img src="socials.webp" style="align-self: center;height: 50px;width: auto;margin-left: 40%;margin-top: 30px;">
+                <img src="socials.webp" style="align-self: center; height: 50px; width: auto; margin-left: 40%; margin-top: 30px;">
             </div>
         </div>
     </div>
